@@ -1,0 +1,11 @@
+--- 
+development: 
+  adapter: mysql
+  username: root
+  password: 
+  database: celerity_fakeweb_development
+test: 
+  adapter: mysql
+  username: root
+  password: 
+  database: celerity_fakeweb_test
