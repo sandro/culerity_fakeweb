@@ -2,7 +2,6 @@ Feature: Weather
   In order to dress appropriately
   As a User
   I want to check the weather
-  wants [behaviour]
 
   Scenario: fake weather
     When I check the Jacksonville weather
