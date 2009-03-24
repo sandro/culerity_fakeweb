@@ -1,0 +1,26 @@
+h1. Culerity with fakeweb
+
+h2. Florida is fucking cold?
+
+p. This example app uses fakeweb to return an erroneous weather
+report for Jacksonville, FL. The cucumber feature called "weather"
+asserts that Jacksonville, FL is "fucking cold," which we all
+know is rarely true. When the test runs, fakeweb intercepts the
+request for Jacksonville weather and instead returns the New York
+weather report, which is unfailingly "fucking cold."
+
+h3. Instructions
+
+# sudo script/server -p 80 -e cucumber
+# cucumber features/weather.feature
+# The test passes!
+# read the code
+
+h3. Make it fail
+
+# edit config/environments/cucumber.rb
+# comment out the fakeweb uri registration
+# restart the server (see above)
+# cucumber features/weather.feature
+# test fails
+
