@@ -18,6 +18,10 @@ config.action_mailer.raise_delivery_errors = false
 
 require 'fakeweb'
 
+# helpful to see where requests come from
 # FakeWeb.allow_net_connect = false
 
-# FakeWeb.register_uri 'http://thefuckingweather.com/?zipcode=32250', :file => File.join(Rails.root, %w(features fixtures cold.html))
+# uncomment to see test fail
+# it will bring back the real weather for Jacksonville which is
+# not fucking cold
+FakeWeb.register_uri 'http://thefuckingweather.com/?zipcode=32250', :file => File.join(Rails.root, %w(features fixtures cold.html))
