@@ -1,0 +1,149 @@
+HTTP/1.1 200 OK
+Date: Fri, 20 Mar 2009 22:16:14 GMT
+Server: Apache
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>THE FUCKING WEATHER</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+		<style type="text/css">
+			.large {
+				font-size: 60pt;
+				text-align: center;
+			}
+			.small {
+				font-size: medium;
+
+			}
+			.center {
+				text-align: center;
+			}
+			.hot {
+				color: #F60B0B
+			}
+			.cold {
+				color: #0476F7
+			}
+			#content {
+				margin-top: 5%
+			}
+			#remark {
+				font-size: x-small;
+				font-style: italic;
+			}
+			#bug {
+				position: fixed;
+				bottom: 1px;
+				color: #9DADC6
+			}
+			#blog {
+				position: fixed;
+				bottom: 1px;
+				right: 1px;
+				color: #9DADC6;
+			}
+
+			#bug:hover {
+				color: #7C9BCD;
+
+			}
+			#ad {
+				margin-left: auto;
+				margin-right: auto;
+				width: 450px;
+				text-align: center;
+			}
+			#ad a {
+				color: #9DADC6;
+			}
+			#ad a:hovor {
+				color: #7C9BCD;
+			}
+			#ad a:visited  {
+				color: #9DADC6;
+			}
+
+			table {
+				margin-left: auto;
+  				margin-right: auto;
+				width: 450px;
+				height: 120px;
+			}
+			td {
+				width: 90px;
+			}
+			.sidebox {
+				margin: 0 auto; /* center for now */
+				width: 32em; /* ems so it will grow */
+				background: url(sbbody-r.gif) no-repeat bottom right;
+				font-size: 100%;
+			}
+			.boxhead {
+				background: url(sbhead-r.gif) no-repeat top right;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+			}
+			.boxhead h2 {
+				background: url(sbhead-l.gif) no-repeat top left;
+				margin: 0;
+				padding: 22px 30px 5px;
+				color: white;
+				font-weight: bold;
+				font-size: 1.2em;
+				line-height: 1em;
+				/* text-shadow: rgba(0,0,0,.4) 0px 2px 5px; Safari-only, but cool */
+			}
+			.boxbody {
+				background: url(sbbody-l.gif) no-repeat bottom left;
+				margin: 0;
+				padding: 5px 30px 31px;
+			}
+
+		</style>
+		<script type="text/javascript">
+		function setCookie(c_name,value)	{
+
+			var exdate=new Date ();
+			if (value == "yes")
+				exdate.setTime(exdate.getTime() + (24 * 60 * 60 * 1000*365));
+			else
+				exdate.setTime(exdate.getTime()-1000);
+			document.cookie=(c_name+ "=" +escape(value)+ "; expires="+exdate.toGMTString());
+		}
+
+		</script>
+    </head>
+    <body onload='document.getElementById("textbox").focus();'>
+<span class="small">Schenectady, NY</span><div id="content"><div class="large" >38&deg;?!<br><br>ITS FUCKING COLD<br><span id="remark">Where's the cat? Oh shit. Fluffy's frozen.</span></div><br><br><form action="/" method="get">
+					<p align="center">ZIP:<input type="text" name="zipcode" id="textbox"><br>
+					<input value="FUCKING WEATHER" type="submit"><br>
+					<input type="checkbox" id="rem" name="REMEMBER" value="checked">
+					 <label for="rem">REMEMBER MY FUCKING WEATHER</label><br><input type="checkbox" id="cel" name="CELSIUS" onclick='setCookie("celsius","yes");' value="yes"><label for="cel">I WANT FUCKING CELSIUS</label></p></form><br><br><div class="sidebox"><div class="boxhead"><h2>THE FUCKING FORECAST</h2></div><div class="boxbody"><table><tr><td>DAY:</td><td class="center"><strong>Fri</strong></td>
+				<td class="center"><strong>Sat</strong></td>
+				</tr><tr><td>HIGH:</td><td class="center hot">42</td>
+				<td class="center hot">49</td>
+				</tr><tr><td>LOW:</td><td class="center cold">20</td><td class="center cold">29</td></tr><tr><td>FORECAST:</td><td class="center">Clear</td>
+				<td class="center">Mostly Sunny</td>
+				</table></div></div></div><br><br><p ID="ad"><a href="http://www.earthshod.com">CLICK HERE IF YOUR WHOLE FUCKING LIFE NEEDS A FORECAST!</a></p>
+       <a id="bug" class="small" href="commentbox.html">THERES A FUCKING BUG</a>
+       <a id="blog" class="small" href="blog.html">THERES A FUCKING BLOG</a>
+
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-4722534-2");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+    </body>
+</html>
